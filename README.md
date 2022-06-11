@@ -42,3 +42,19 @@
     <li>Parte essencial do Entity Framework</li>
     <li>Similar ao Dapper</li>
 </ul>
+
+<h2>4. Entity Framework</h2>
+
+<h3>Um framework:</h3>
+<ul>    
+    <li>Conjunto de bibliotecas</li>
+    <li>Muito mais poderoso que o Dapper</li>
+    <ul>
+        <li>Maix compleso e mais <b>pesado</b></li>
+    </ul>
+    <li>Permite trabalhar com:</li>
+    <ul>
+        <li>CRUD</li>
+        <li>Migrações</li>
+    </ul>
+</ul>
