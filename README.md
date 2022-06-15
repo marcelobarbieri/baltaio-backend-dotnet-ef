@@ -14,6 +14,7 @@
     <li><a href="#orm">ORM</a></li>
     <li><a href="#ef">Entity Framework</a></li>
     <li><a href="#code-database-first">Code First ou Database First</a></li>
+    <li><a href="#datacontext">DataContext</a></li>
 </ul>
 
 </details>
@@ -137,6 +138,24 @@
 <li>Começamos pelo código</li>
 <li>Geramos o banco automaticamente via Migrations</li>
 <li>Modelo amplamente usado</li>
+</ul>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region DataContext -->
+
+<details id="datacontext"><summary>DataContext</summary>
+
+<br/>
+
+<p>Contextos:</p>
+
+<ul>
+<li>Único objeto que o EF precisa</li>
+<li>Define o <b>banco de dados</b> em memória</li>
+<li>Composto por subconjuntos de dados chamados de <b>DbSet</b></li>
 </ul>
 
 </details>
