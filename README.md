@@ -2,9 +2,35 @@
 
 > As aulas assistidas foram organizadas nos **commits**
 
-<h2>1. Introdução</h2>
+<!--#region Sumário -->
 
-<h3>Objetivos:</h3>
+<h2>Sumário</h2>
+
+<details><summary>Introdução</summary>
+
+<ul>
+    <li><a href="#introducao">Introdução</a></li>
+    <li><a href="#ferramentas">Ferramentas</a></li>
+    <li><a href="#orm">ORM</a></li>
+    <li><a href="#ef">Entity Framework</a></li>
+    <li><a href="#code-database-first">Code First ou Database First</a></li>
+</ul>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Introdução -->
+
+<h2>Introdução</h2>
+
+<!--#region Introdução -->
+
+<details id="introducao"><summary>Introdução</summary>
+
+<br/>
+
+<p>Objetivos:</p>
 <ul>    
     <li>Introdução e imersão</li>
     <li>Relacionamentos</li>
@@ -13,9 +39,17 @@
     <li>Performance</li>
 </ul>
 
-<h2>2. Ferramentas</h2>
+</details>
 
-<h3>Requisitos</h3>
+<!--#endregion -->
+
+<!--#region Ferramentas -->
+
+<details id="ferramentas"><summary>Ferramentas</summary>
+
+<br/>
+
+<p>Requisitos:</p>
 <ul>
     <li>Fundamentos C#</li>
     <li>OOP</li>
@@ -23,7 +57,7 @@
     <li>Dapper</li>
 </ul>
 
-<h3>Ferramentas</h3>
+<p>Ferramentas:</p>
 <ul>
     <li>Fundamentos C#, OOP, SQL Server, Dapper</li>
     <li>Windows, Mac ou Linux</li>
@@ -33,9 +67,17 @@
     <li>Visual Studio Code</li>    
 </ul>
 
-<h2>3. ORMs</h2>
+</details>
 
-<h3>Object/ Relational Mapping:</h3>
+<!--#endregion -->
+
+<!--#region ORM -->
+
+<details id="orm"><summary>ORM</summary>
+
+<br/>
+
+<p>Object/ Relational Mapping:</p>
 <ul>    
     <li>Mapeamento Objeto/ Relacional</li>
     <li>Responsável por fazer o DE-PARA</li>
@@ -43,9 +85,17 @@
     <li>Similar ao Dapper</li>
 </ul>
 
-<h2>4. Entity Framework</h2>
+</details>
 
-<h3>Um framework:</h3>
+<!--#endregion -->
+
+<!--#region Entity Framework -->
+
+<details id="ef"><summary>Entity Framework</summary>
+
+<br/>
+
+<p>Framework:</p>
 <ul>    
     <li>Conjunto de bibliotecas</li>
     <li>Muito mais poderoso que o Dapper</li>
@@ -58,3 +108,39 @@
         <li>Migrações</li>
     </ul>
 </ul>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Code First ou Database First -->
+
+<details id="code-database-first"><summary>Code First ou Database First</summary>
+
+<br/>
+
+<p>Projetos Greenfield e Brownfield</p>
+
+<br/>
+
+<p>Abordagens:</p>
+
+<p>1. Database First:</p>
+<ul>
+<li>O banco já está feito</li>
+<li>Mapeamos o que existe para os novos objetos criados</li>
+</ul>
+
+<p>2. Code First:</p>
+<ul>
+<li>Também conhecido como <b>Model First</b></li>
+<li>Começamos pelo código</li>
+<li>Geramos o banco automaticamente via Migrations</li>
+<li>Modelo amplamente usado</li>
+</ul>
+
+</details>
+
+<!--#endregion -->
+
+<!--#endregion -->
