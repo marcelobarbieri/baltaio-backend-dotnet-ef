@@ -15,6 +15,7 @@
     <li><a href="#ef">Entity Framework</a></li>
     <li><a href="#code-database-first">Code First ou Database First</a></li>
     <li><a href="#datacontext">DataContext</a></li>
+    <li><a href="#restaurando-banco">Restaurando o banco</a></li>
 </ul>
 
 </details>
@@ -157,6 +158,30 @@
 <li>Define o <b>banco de dados</b> em memória</li>
 <li>Composto por subconjuntos de dados chamados de <b>DbSet</b></li>
 </ul>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Restaurando o Banco -->
+
+<details id="restaurando-banco"><summary>Restaurando o Banco</summary>
+
+<br/>
+
+<p>Preparando o ambiente:</p>
+
+[Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+[Docker - Instalação, Configuração e Primeiros Passos](https://balta.io/blog/docker-instalacao-configuracao-e-primeiros-passos)
+
+[SQL Server Docker](https://balta.io/blog/sql-server-docker)
+
+[Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16)
+
+[Script SQL](./script.sql)
+
+</details>
 
 </details>
 
