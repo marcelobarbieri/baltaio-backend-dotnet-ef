@@ -23,6 +23,7 @@
     <li><a href="#update">Update</a></li>
     <li><a href="#delete">Delete</a></li>
     <li><a href="#tolist">ToList</a></li>
+    <li><a href="#asnottracking">AsNoTracking</a></li>
 </ul>
 
 </details>
@@ -311,6 +312,32 @@ SELECT [Id]
 <details id="tolist"><summary>ToList</summary>
 
 <br/>
+
+```ps
+dotnet run
+```
+
+```sql
+SELECT [Id]
+      ,[Name]
+      ,[Slug]
+  FROM [Blog].[dbo].[Tag]
+```
+
+</details>
+
+<!--#endregion -->
+
+<!--#region AsNoTracking -->
+
+<details id="asnotracking"><summary>AsNoTracking</summary>
+
+<br/>
+
+Muito usado em cenários somente leitura.
+
+Utilizar em leituras.
+Não recomendável para atualizações e exclusões. Geralmente os erros ocorrem em tempo de execução (cliente).
 
 ```ps
 dotnet run

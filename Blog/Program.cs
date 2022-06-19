@@ -2,6 +2,7 @@
 using System.Linq;
 using Blog.Data;
 using Blog.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Blog
 {
@@ -21,17 +22,28 @@ namespace Blog
                 // context.SaveChanges();
 
                 // R - READ
+
+                // ToList()
                 //var tags = context.Tags; // referência, não executa no banco 
                 // foreach (var tag in tags) // executa no banco
                 // {
                 //     Console.WriteLine(tag.Name);
                 // }
+                // var tags = context
+                //     .Tags
+                //     .Where(t => t.Name.Contains("ASP"))
+                //     .ToList(); // executa no banco e retorna uma lista, utilizar ao final do método (performance)
+                // foreach (var tag in tags) // executa no banco
+                // {
+                //     Console.WriteLine(tag.Name);
+                // }
 
+                // AsNoTracking()
                 var tags = context
                     .Tags
-                    .Where(t => t.Name.Contains("ASP"))
-                    .ToList(); // executa no banco e retorna uma lista, utilizar ao final do método (performance)
-                foreach (var tag in tags) // executa no banco
+                    .AsNoTracking() // desabilita o acompanhamento (metadados)
+                    .ToList();
+                foreach (var tag in tags)
                 {
                     Console.WriteLine(tag.Name);
                 }
@@ -41,6 +53,15 @@ namespace Blog
                 // propriedades + metadados
                 // var tag = context.Tags.FirstOrDefault(t => t.Id == 1);
                 // tag.Name = ".NET";
+                // tag.Slug = "dotnet";
+                // context.Update(tag);
+                // context.SaveChanges();
+
+                // var tag = context
+                //     .Tags
+                //     .AsNoTracking() // não utilizar em UPDATE e DELETE, os erros geralmente ocorrem em tempo de execução com o cliente
+                //     .FirstOrDefault(t => t.Id == 3);
+                // tag.Name = "Ponto NET";
                 // tag.Slug = "dotnet";
                 // context.Update(tag);
                 // context.SaveChanges();
