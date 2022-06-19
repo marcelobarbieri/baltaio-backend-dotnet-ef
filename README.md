@@ -20,6 +20,7 @@
     <li><a href="#dbset">DbSet</a></li>
     <li><a href="#config-datacontext">Configurando o DataContext</a></li>
     <li><a href="#create">Create</a></li>
+    <li><a href="#update">Update</a></li>
 </ul>
 
 </details>
@@ -243,6 +244,27 @@ dotnet restore
 <!--#region Create -->
 
 <details id="create"><summary>Create</summary>
+
+<br/>
+
+```ps
+dotnet run
+```
+
+```sql
+SELECT [Id]
+      ,[Name]
+      ,[Slug]
+  FROM [Blog].[dbo].[Tag]
+```
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Update -->
+
+<details id="update"><summary>Update</summary>
 
 <br/>
 
