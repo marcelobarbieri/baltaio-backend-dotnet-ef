@@ -21,6 +21,7 @@
     <li><a href="#config-datacontext">Configurando o DataContext</a></li>
     <li><a href="#create">Create</a></li>
     <li><a href="#update">Update</a></li>
+    <li><a href="#delete">Delete</a></li>
 </ul>
 
 </details>
@@ -265,6 +266,27 @@ SELECT [Id]
 <!--#region Update -->
 
 <details id="update"><summary>Update</summary>
+
+<br/>
+
+```ps
+dotnet run
+```
+
+```sql
+SELECT [Id]
+      ,[Name]
+      ,[Slug]
+  FROM [Blog].[dbo].[Tag]
+```
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Delete -->
+
+<details id="delete"><summary>Delete</summary>
 
 <br/>
 
