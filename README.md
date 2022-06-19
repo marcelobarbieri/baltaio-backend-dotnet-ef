@@ -19,6 +19,7 @@
     <li><a href="#criando-modelos">Criando os Modelos</a></li>
     <li><a href="#dbset">DbSet</a></li>
     <li><a href="#config-datacontext">Configurando o DataContext</a></li>
+    <li><a href="#create">Create</a></li>
 </ul>
 
 </details>
@@ -234,6 +235,27 @@ dotnet restore
 <details id="config-datacontext"><summary>Configurando o DataContext</summary>
 
 <br/>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Create -->
+
+<details id="create"><summary>Create</summary>
+
+<br/>
+
+```ps
+dotnet run
+```
+
+```sql
+SELECT [Id]
+      ,[Name]
+      ,[Slug]
+  FROM [Blog].[dbo].[Tag]
+```
 
 </details>
 
