@@ -18,6 +18,7 @@
     <li><a href="#restaurando-banco">Restaurando o banco</a></li>
     <li><a href="#criando-modelos">Criando os Modelos</a></li>
     <li><a href="#dbset">DbSet</a></li>
+    <li><a href="#config-datacontext">Configurando o DataContext</a></li>
 </ul>
 
 </details>
@@ -185,8 +186,6 @@
 
 </details>
 
-</details>
-
 <!--#endregion -->
 
 <!--#region Criando os Modelos -->
@@ -209,8 +208,6 @@ dotnet new console -o Blog
 
 </details>
 
-</details>
-
 <!--#endregion -->
 
 <!--#region DbSet -->
@@ -229,6 +226,14 @@ dotnet restore
 ```
 
 </details>
+
+<!--#endregion -->
+
+<!--#region Configurando o DataContext -->
+
+<details id="config-datacontext"><summary>Configurando o DataContext</summary>
+
+<br/>
 
 </details>
 
