@@ -16,6 +16,7 @@
     <li><a href="#code-database-first">Code First ou Database First</a></li>
     <li><a href="#datacontext">DataContext</a></li>
     <li><a href="#restaurando-banco">Restaurando o banco</a></li>
+    <li><a href="#criando-modelos">Criando os Modelos</a></li>
 </ul>
 
 </details>
@@ -180,6 +181,30 @@
 [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16)
 
 [Script SQL](./script.sql)
+
+</details>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Criando os Modelos -->
+
+<details id="criando-modelos"><summary>Criando os Modelos</summary>
+
+<br/>
+
+```ps
+dotnet --list-sdks
+dotnet new globaljson --sdk-version 5.0.400
+
+dotnet --version
+5.0.408
+```
+
+```ps
+dotnet new console -o Blog
+```
 
 </details>
 
