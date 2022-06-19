@@ -17,6 +17,7 @@
     <li><a href="#datacontext">DataContext</a></li>
     <li><a href="#restaurando-banco">Restaurando o banco</a></li>
     <li><a href="#criando-modelos">Criando os Modelos</a></li>
+    <li><a href="#dbset">DbSet</a></li>
 </ul>
 
 </details>
@@ -204,6 +205,27 @@ dotnet --version
 
 ```ps
 dotnet new console -o Blog
+```
+
+</details>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region DbSet -->
+
+<details id="dbset"><summary>DbSet</summary>
+
+<br/>
+
+<p>Instalar pacotes:</p>
+
+```ps
+dotnet add package Microsoft.EntityFrameworkCore --version 5.0.17
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.17
+
+dotnet restore
 ```
 
 </details>
