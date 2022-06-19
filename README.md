@@ -22,6 +22,7 @@
     <li><a href="#create">Create</a></li>
     <li><a href="#update">Update</a></li>
     <li><a href="#delete">Delete</a></li>
+    <li><a href="#tolist">ToList</a></li>
 </ul>
 
 </details>
@@ -287,6 +288,27 @@ SELECT [Id]
 <!--#region Delete -->
 
 <details id="delete"><summary>Delete</summary>
+
+<br/>
+
+```ps
+dotnet run
+```
+
+```sql
+SELECT [Id]
+      ,[Name]
+      ,[Slug]
+  FROM [Blog].[dbo].[Tag]
+```
+
+</details>
+
+<!--#endregion -->
+
+<!--#region ToList -->
+
+<details id="tolist"><summary>ToList</summary>
 
 <br/>
 
