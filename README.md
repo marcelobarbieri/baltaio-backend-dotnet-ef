@@ -24,6 +24,7 @@
     <li><a href="#delete">Delete</a></li>
     <li><a href="#tolist">ToList</a></li>
     <li><a href="#asnottracking">AsNoTracking</a></li>
+    <li><a href="#first-single">First, Single</a></li>
 </ul>
 
 </details>
@@ -348,6 +349,23 @@ SELECT [Id]
       ,[Name]
       ,[Slug]
   FROM [Blog].[dbo].[Tag]
+```
+
+</details>
+
+<!--#endregion -->
+
+<!--#region First, Single -->
+
+<details id="first-single"><summary>First, Single</summary>
+
+<br/>
+
+First: Traz o primeiro item da lista
+Single: Traz o primeiro item da lista, mas se houver mais de um item exibe exceção
+
+```ps
+dotnet run
 ```
 
 </details>

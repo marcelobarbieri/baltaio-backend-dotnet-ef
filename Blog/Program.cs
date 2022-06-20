@@ -39,14 +39,39 @@ namespace Blog
                 // }
 
                 // AsNoTracking()
-                var tags = context
+                // var tags = context
+                //     .Tags
+                //     .AsNoTracking() // desabilita o acompanhamento (metadados)
+                //     .ToList();
+                // foreach (var tag in tags)
+                // {
+                //     Console.WriteLine(tag.Name);
+                // }
+
+                // First, Single
+                var tag = context
                     .Tags
-                    .AsNoTracking() // desabilita o acompanhamento (metadados)
-                    .ToList();
-                foreach (var tag in tags)
-                {
-                    Console.WriteLine(tag.Name);
-                }
+                    .AsNoTracking()
+
+                    //.Single(t => t.Id == 3); 
+                    // executa no banco
+                    // exibe exceção se não encontrar
+                    // se houver mais de um resultado exibe exceção
+
+                    //.SingleOrDefault(t => t.Id == 3); houver mais de um resultado exibe exceção
+                    // executa no banco
+                    // (default) retorna nulo se não existir ao invés de exceção
+                    // se houver mais de um resultado exibe exceção
+
+                    //.First(t => t.Id == 3); 
+                    // executa no banco, exibe exceção se não encontrar
+
+                    .FirstOrDefault(t => t.Id == 3)
+                    // executa no banco
+                    // (default) retorna nulo se não existir ao invés de exceção
+                    ;
+
+                Console.WriteLine(tag?.Name); // nullsafe, se existir tag imprime o nome, caso contrário não imprime nada
 
                 // U - UPDATE
                 // rehidratação: ler o item do banco novamente
