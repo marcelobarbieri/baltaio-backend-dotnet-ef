@@ -39,7 +39,7 @@
 
 <ul>
     <li><a href="#ob-mapeamento">Mapeamento</a></li>
-    <li><a href="#ob-dataannotations">DataAnnotations</a></li>
+    <li><a href="#ob-tipos">Tipos de Mapeamento</a></li>
 </ul>
 
 </details>
@@ -414,9 +414,9 @@ dotnet run
 
 <!--#endregion -->
 
-<!--#region DataAnnotations -->
+<!--#region Tipos de Mapeamento -->
 
-<details id="ob-dataannotations"><summary>DataAnnotations</summary>
+<details id="ob-tipos"><summary>Tipos de Mapeamento</summary>
 
 <br/>
 
