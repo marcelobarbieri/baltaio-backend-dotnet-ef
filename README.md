@@ -6,6 +6,8 @@
 
 <h2>Sumário</h2>
 
+<!--#region Introdução -->
+
 <details><summary>Introdução</summary>
 
 <ul>
@@ -28,6 +30,20 @@
 </ul>
 
 </details>
+
+<!--#endregion -->
+
+<!--#region Operações Básicas -->
+
+<details><summary>Operações Básicas</summary>
+
+<ul>
+    <li><a href="#ob-mapeamento">Mapeamento</a></li>
+</ul>
+
+</details>
+
+<!--#endregion -->
 
 <!--#endregion -->
 
@@ -367,6 +383,31 @@ Single: Traz o primeiro item da lista, mas se houver mais de um item exibe exce�
 ```ps
 dotnet run
 ```
+
+</details>
+
+<!--#endregion -->
+
+<!--#endregion -->
+
+<!--#region Operações Básicas -->
+
+<h2>Operações Básicas</h2>
+
+<!--#region Mapeamento -->
+
+<details id="ob-mapeamento"><summary>Mapeamento</summary>
+
+<br/>
+
+<p><b>O que é?</b></p>
+<ul>    
+    <li>De/Para</li>
+    <li>Diz qual classe no C# se refere a qual tabela no banco de dados</li>
+    <li>Diz quais propriedades da classe se referem a quais colunas da tabela relacionada</li>
+    <li>Informa os tipos de dados</li>
+    <li>Permite gerar o banco automaticamente</li>
+</ul>
 
 </details>
 
