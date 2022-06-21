@@ -39,6 +39,7 @@
 
 <ul>
     <li><a href="#ob-mapeamento">Mapeamento</a></li>
+    <li><a href="#ob-dataannotations">DataAnnotations</a></li>
 </ul>
 
 </details>
@@ -408,6 +409,39 @@ dotnet run
     <li>Informa os tipos de dados</li>
     <li>Permite gerar o banco automaticamente</li>
 </ul>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region DataAnnotations -->
+
+<details id="ob-dataannotations"><summary>DataAnnotations</summary>
+
+<br/>
+
+<p><b>Tipos:</b></p>
+<ul>    
+    <li>
+        Fluent Mapping
+        <ul>
+            <li>Mapeamento fluente</li>
+            <li>Feito em uma classe externa</li>
+            <li>Não "polui" a classe principal</li>
+            <li>Não cria dependências na classe/ projeto principal</li>
+        </ul>
+    </li>
+    <li>
+        Data Annotations
+        <ul>
+            <li>Feitos diretamente nas classes</li>
+            <li>Mais simples e diretos</li>
+            <li>Dependem do System.ComponentModel.DataAnnotations ¹</li>
+        </ul>
+    </li>
+</ul>
+
+¹ Alguns dependem do Microsoft.EntityFrameworkCore também. Quando compartilhado com outros projetos, as dependências não são recomendadas. Utilizado para projetos menores.
 
 </details>
 
