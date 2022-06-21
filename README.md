@@ -41,6 +41,7 @@
     <li><a href="#ob-mapeamento">Mapeamento</a></li>
     <li><a href="#ob-tipos">Tipos de Mapeamento</a></li>
     <li><a href="#ob-table-key-identity">Table, Key e Identity</a></li>
+    <li><a href="#ob-required-maxlenght-column">Required, MaxLenght e Column</a></li>
 </ul>
 
 </details>
@@ -451,6 +452,16 @@ dotnet run
 <!--#region Table, Key e Identity -->
 
 <details id="ob-table-key-identity"><summary>Table, Key e Identity</summary>
+
+<br/>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Required, MaxLenght e Column -->
+
+<details id="ob-required-maxlenght-column"><summary>Required, MaxLenght e Column</summary>
 
 <br/>
 
