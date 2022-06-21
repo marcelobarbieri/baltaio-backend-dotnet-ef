@@ -40,6 +40,7 @@
 <ul>
     <li><a href="#ob-mapeamento">Mapeamento</a></li>
     <li><a href="#ob-tipos">Tipos de Mapeamento</a></li>
+    <li><a href="#ob-table-key-identity">Table, Key e Identity</a></li>
 </ul>
 
 </details>
@@ -442,6 +443,16 @@ dotnet run
 </ul>
 
 ¹ Alguns dependem do Microsoft.EntityFrameworkCore também. Quando compartilhado com outros projetos, as dependências não são recomendadas. Utilizado para projetos menores.
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Table, Key e Identity -->
+
+<details id="ob-table-key-identity"><summary>Table, Key e Identity</summary>
+
+<br/>
 
 </details>
 
