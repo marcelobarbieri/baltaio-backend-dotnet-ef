@@ -44,6 +44,7 @@
     <li><a href="#ob-required-maxlenght-column">Required, MaxLenght e Column</a></li>
     <li><a href="#ob-navigation-properties">Navigation Properties</a></li>
     <li><a href="#ob-subconjuntos">Trabalhando com Sub Conjuntos</a></li>
+    <li><a href="#ob-include">Include</a></li>
 </ul>
 
 </details>
@@ -498,6 +499,22 @@ select * from [Category]
 ```
 
 ![Imagem](./Blog/Assets/Captura%20de%20tela%202022-06-21%20210232.png)
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Include -->
+
+<details id="ob-include"><summary>Include</summary>
+
+<br/>
+
+```ps
+dotnet run
+
+Começando com EF Core escrito por André Baltieri
+```
 
 </details>
 
