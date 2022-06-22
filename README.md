@@ -45,6 +45,7 @@
     <li><a href="#ob-navigation-properties">Navigation Properties</a></li>
     <li><a href="#ob-subconjuntos">Trabalhando com Sub Conjuntos</a></li>
     <li><a href="#ob-include">Include</a></li>
+    <li><a href="#ob-log">Log</a></li>
 </ul>
 
 </details>
@@ -514,6 +515,55 @@ select * from [Category]
 dotnet run
 
 Começando com EF Core escrito por André Baltieri
+```
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Log -->
+
+<details id="ob-log"><summary>Log</summary>
+
+<br/>
+
+<p>Evitar **ThenInclude** que faz **subselect** na base de dados.</p>
+
+```ps
+dotnet run
+```
+
+Sem include:
+
+```ps
+info: 21/06/2022 21:17:42.309 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (76ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AuthorId], [p].[Body], [p].[CategoryId], [p].[CreateDate], [p].[LastUpdateDate], [p].[Slug], [p].[Summary], [p].[Title]
+      FROM [Post] AS [p]
+      ORDER BY [p].[LastUpdateDate] DESC
+```
+
+Com include **Author**:
+
+```ps
+info: 21/06/2022 21:19:50.036 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (101ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AuthorId], [p].[Body], [p].[CategoryId], [p].[CreateDate], [p].[LastUpdateDate], [p].[Slug], [p].[Summary], [p].[Title], [u].[Id], [u].[Bio], [u].[Email], [u].[Image], [u].[Name], [u].[PasswordHash], [u].[Slug]
+      FROM [Post] AS [p]
+      INNER JOIN [User] AS [u] ON [p].[AuthorId] = [u].[Id]
+      ORDER BY [p].[LastUpdateDate] DESC
+```
+
+Com include **Author** e **Category**:
+
+```ps
+info: 21/06/2022 21:22:41.974 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (193ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [p].[Id], [p].[AuthorId], [p].[Body], [p].[CategoryId], [p].[CreateDate], [p].[LastUpdateDate], [p].[Slug], [p].[Summary], [p].[Title], [u].[Id], [u].[Bio], [u].[Email], [u].[Image], [u].[Name], [u].[PasswordHash], [u].[Slug], [c].[Id], [c].[Name], [c].[Slug]
+      FROM [Post] AS [p]
+      INNER JOIN [User] AS [u] ON [p].[AuthorId] = [u].[Id]
+      INNER JOIN [Category] AS [c] ON [p].[CategoryId] = [c].[Id]
+      ORDER BY [p].[LastUpdateDate] DESC
 ```
 
 </details>
