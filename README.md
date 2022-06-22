@@ -43,6 +43,7 @@
     <li><a href="#ob-table-key-identity">Table, Key e Identity</a></li>
     <li><a href="#ob-required-maxlenght-column">Required, MaxLenght e Column</a></li>
     <li><a href="#ob-navigation-properties">Navigation Properties</a></li>
+    <li><a href="#ob-subconjuntos">Trabalhando com Sub Conjuntos</a></li>
 </ul>
 
 </details>
@@ -472,9 +473,31 @@ dotnet run
 
 <!--#region Navigation Properties -->
 
-<details id="ob-navigation-properties"><summary>Navigation Propertiesn</summary>
+<details id="ob-navigation-properties"><summary>Navigation Properties</summary>
 
 <br/>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Trabalhando com Sub Conjuntos -->
+
+<details id="ob-subconjuntos"><summary>Trabalhando com Sub Conjuntos</summary>
+
+<br/>
+
+```ps
+dotnet run
+```
+
+```sql
+select * from [Post]
+select * from [User]
+select * from [Category]
+```
+
+![Imagem](./Blog/Assets/Captura%20de%20tela%202022-06-21%20210232.png)
 
 </details>
 
