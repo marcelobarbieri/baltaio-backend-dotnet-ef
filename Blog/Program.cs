@@ -43,16 +43,30 @@ namespace Blog
             // context.Posts.Add(post);
             // context.SaveChanges();
 
-            var posts = context
+            // var posts = context
+            //     .Posts
+            //     .AsNoTracking()
+            //     .Include(x => x.Author)
+            //     .Include(x => x.Category)
+            //     .OrderByDescending(x => x.LastUpdateDate)
+            //     .ToList();
+
+            // foreach (var post in posts)
+            //     Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em {post.Category?.Name}"); // sempre utilizar nullsafe em subconjuntos
+
+            var post = context
                 .Posts
-                .AsNoTracking()
+                // .AsNoTracking()
                 .Include(x => x.Author)
                 .Include(x => x.Category)
                 .OrderByDescending(x => x.LastUpdateDate)
-                .ToList();
+                .FirstOrDefault(); // pegando o primeiro item
 
-            foreach (var post in posts)
-                Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em {post.Category?.Name}"); // sempre utilizar nullsafe em subconjuntos
+            post.Author.Name = "Teste";
+            
+            context.Posts.Update(post);
+            context.SaveChanges();
+
         }
     }
 }

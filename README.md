@@ -46,6 +46,7 @@
     <li><a href="#ob-subconjuntos">Trabalhando com Sub Conjuntos</a></li>
     <li><a href="#ob-include">Include</a></li>
     <li><a href="#ob-log">Log</a></li>
+    <li><a href="#ob-subconjunto">Alterando um Subconjunto</a></li>
 </ul>
 
 </details>
@@ -565,6 +566,50 @@ info: 21/06/2022 21:22:41.974 RelationalEventId.CommandExecuted[20101] (Microsof
       INNER JOIN [Category] AS [c] ON [p].[CategoryId] = [c].[Id]
       ORDER BY [p].[LastUpdateDate] DESC
 ```
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Alterando um Subconjunto -->
+
+<details id="ob-subconjunto"><summary>Alterando um Subconjunto</summary>
+
+<br/>
+
+```ps
+dotnet run
+```
+
+```ps
+info: 21/06/2022 21:35:49.805 CoreEventId.ContextInitialized[10403] (Microsoft.EntityFrameworkCore.Infrastructure)
+      Entity Framework Core 5.0.17 initialized 'BlogDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+info: 21/06/2022 21:35:50.646 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [p].[Id], [p].[AuthorId], [p].[Body], [p].[CategoryId], [p].[CreateDate], [p].[LastUpdateDate], [p].[Slug], [p].[Summary], [p].[Title], [u].[Id], [u].[Bio], [u].[Email], [u].[Image], [u].[Name], [u].[PasswordHash], [u].[Slug], [c].[Id], [c].[Name], [c].[Slug]
+      FROM [Post] AS [p]
+      INNER JOIN [User] AS [u] ON [p].[AuthorId] = [u].[Id]
+      INNER JOIN [Category] AS [c] ON [p].[CategoryId] = [c].[Id]
+      ORDER BY [p].[LastUpdateDate] DESC
+info: 21/06/2022 21:35:51.102 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (71ms) [Parameters=[@p8='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [Post] SET [AuthorId] = @p0, [Body] = @p1, [CategoryId] = @p2, [CreateDate] = @p3, [LastUpdateDate] = @p4, [Slug] = @p5, [Summary] = @p6, [Title] = @p7
+      WHERE [Id] = @p8;
+      SELECT @@ROWCOUNT;
+info: 21/06/2022 21:35:51.118 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (8ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      UPDATE [User] SET [Name] = @p0
+      WHERE [Id] = @p1;
+      SELECT @@ROWCOUNT;
+```
+
+```sql
+select * from [User];
+```
+
+![Imagem](./Blog/Assets/Captura%20de%20tela%202022-06-21%20213623.png)
 
 </details>
 
