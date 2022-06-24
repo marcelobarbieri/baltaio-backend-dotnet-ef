@@ -9,7 +9,9 @@ namespace Blog.Data.Mappings
         public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.ToTable("Category");
+
             builder.HasKey(x => x.Id);
+
             builder.Property(x => x.Id)
                 .ValueGeneratedOnAdd()
                 .UseIdentityColumn();
@@ -25,6 +27,9 @@ namespace Blog.Data.Mappings
                 .HasColumnName("Slug")
                 .HasColumnType("VARCHAR")
                 .HasMaxLength(80);
+
+            builder.HasIndex(x => x.Slug, "IX_Category_Slug")
+                .IsUnique();
         }
     }
 }
