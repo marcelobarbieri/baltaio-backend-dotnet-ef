@@ -53,6 +53,18 @@
 
 <!--#endregion -->
 
+<!--#region Mapeamento -->
+
+<details><summary>Mapeamento</summary>
+
+<ul>
+    <li><a href="#map-introducao">Introdução</a></li>
+</ul>
+
+</details>
+
+<!--#endregion -->
+
 <!--#endregion -->
 
 <!--#region Introdução -->
@@ -610,6 +622,24 @@ select * from [User];
 ```
 
 ![Imagem](./Blog/Assets/Captura%20de%20tela%202022-06-21%20213623.png)
+
+</details>
+
+<!--#endregion -->
+
+<!--#endregion -->
+
+<!--#region Mapeamento -->
+
+<h2>Mapeamento</h2>
+
+<!--#region Introdução -->
+
+<details id="map-introducao"><summary>Introdução</summary>
+
+<br/>
+
+<p><b>Fluent Mapping</b></p>
 
 </details>
 
