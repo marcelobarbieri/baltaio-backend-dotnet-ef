@@ -64,6 +64,7 @@
     <li><a href="#map-propriedades">Mapeando Propriedades</a></li>
     <li><a href="#map-indices">Índices</a></li>
     <li><a href="#map-usuario">Iniciando o Mapeamento do Usuário</a></li>
+    <li><a href="#map-default">Default Values</a></li>
 </ul>
 
 </details>
@@ -693,6 +694,16 @@ select * from [User];
 <!--#region Iniciando o Mapeamento do Usuário -->
 
 <details id="map-usuario"><summary>Iniciando o Mapeamento do Usuário</summary>
+
+<br/>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Default Values -->
+
+<details id="map-default"><summary>Default Values</summary>
 
 <br/>
 
