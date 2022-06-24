@@ -60,6 +60,7 @@
 <ul>
     <li><a href="#map-introducao">Introdução</a></li>
     <li><a href="#map-iniciando">Iniciando o Mapeamento</a></li>
+    <li><a href="#map-primary-identity">Chave Primária e Identity</a></li>
 </ul>
 
 </details>
@@ -649,6 +650,16 @@ select * from [User];
 <!--#region Iniciando o Mapeamento -->
 
 <details id="map-iniciando"><summary>Iniciando o Mapeamento</summary>
+
+<br/>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Chave Primária e Identity -->
+
+<details id="map-primary-identity"><summary>Chave Primária e Identity</summary>
 
 <br/>
 
