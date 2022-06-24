@@ -63,6 +63,7 @@
     <li><a href="#map-primary-identity">Chave Primária e Identity</a></li>
     <li><a href="#map-propriedades">Mapeando Propriedades</a></li>
     <li><a href="#map-indices">Índices</a></li>
+    <li><a href="#map-usuario">Iniciando o Mapeamento do Usuário</a></li>
 </ul>
 
 </details>
@@ -682,6 +683,16 @@ select * from [User];
 <!--#region Índices -->
 
 <details id="map-indices"><summary>Índices</summary>
+
+<br/>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Iniciando o Mapeamento do Usuário -->
+
+<details id="map-usuario"><summary>Iniciando o Mapeamento do Usuário</summary>
 
 <br/>
 
