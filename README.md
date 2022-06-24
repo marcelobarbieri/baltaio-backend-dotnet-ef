@@ -59,6 +59,7 @@
 
 <ul>
     <li><a href="#map-introducao">Introdução</a></li>
+    <li><a href="#map-iniciando">Iniciando o Mapeamento</a></li>
 </ul>
 
 </details>
@@ -640,6 +641,16 @@ select * from [User];
 <br/>
 
 <p><b>Fluent Mapping</b></p>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Iniciando o Mapeamento -->
+
+<details id="map-iniciando"><summary>Iniciando o Mapeamento</summary>
+
+<br/>
 
 </details>
 
