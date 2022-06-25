@@ -82,6 +82,7 @@
 <ul>
     <li><a href="#rel-introducao">Introdução</a></li>
     <li><a href="#rel-migracao">Criando uma migração</a></li>
+    <li><a href="#rel-banco">Atualizando o banco</a></li>
 </ul>
 
 </details>
@@ -830,6 +831,28 @@ dotnet ef migrations add InitialCreation
 ```
 
 <p>Será criada a pasta <b>Migrations</b> dentro do projeto</p>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Atualizando o banco -->
+
+<details id="rel-banco"><summary>Atualizando o banco</summary>
+
+<br/>
+
+```ps
+dotnet ef database update
+```
+
+```sql
+SELECT TOP (1000) [MigrationId]
+      ,[ProductVersion]
+  FROM [Blog].[dbo].[__EFMigrationsHistory]
+```
+
+![Imagem](./FluentBlog/Assets/Captura%20de%20tela%202022-06-25%20111557.png)
 
 </details>
 
