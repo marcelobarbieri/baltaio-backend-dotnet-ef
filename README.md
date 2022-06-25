@@ -97,6 +97,7 @@
 
 <ul>
     <li><a href="#out-performance">Performance</a></li>
+    <li><a href="#out-asnotracking">AsNoTracking</a></li>
 </ul>
 
 </details>
@@ -958,6 +959,20 @@ GO
 Performance é uma feature. Desejável, não obrigatório.<br/>
 Definir o que seria performance.
 </p>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region AsNoTracking -->
+
+<details id="out-asnotracking"><summary>AsNoTracking</summary>
+
+<br/>
+
+<p>Tracking</p>
+<p>Metadados: informações a mais utilizadas pelo <b>EF</b></p>
+<p>AsNoTracking não traz metadados</p>
 
 </details>
 
