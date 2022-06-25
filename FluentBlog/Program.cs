@@ -12,35 +12,23 @@ namespace Blog
     {
         static void Main(string[] args)
         {
-
             using var context = new BlogDataContext();
-
-            // Lazy Loading (virtual)
-            // Models/Post.cs
-            // public virtual List<Tag> Tags { get; set; }
-            var posts1 = context.Posts;
-            foreach (var post in posts1) // SELECT * FROM posts
-            {
-                foreach (var tag in post.Tags) // SELECT * FROM tags
-                {
-
-                }
-            }
-
-            // Eager Loading (include)
-            // Models/Post.cs
-            // public virtual List<Tag> Tags { get; set; }
-            var posts2 = context.Posts.Include(x => x.Tags)
-                .Select(x => new { Id = x.Id }); // seleciona somente as propriedade desejadas dentro de um novo objeto
-            foreach (var post in posts2) // SELECT * FROM posts INNER JOIN tags
-            {
-                foreach (var tag in post.Tags)
-                {
-
-                }
-            }
-
+            var posts1 = GetPosts(context, 0, 25);
+            var posts2 = GetPosts(context, 25, 25);
+            var posts3 = GetPosts(context, 50, 25);
+            var posts4 = GetPosts(context, 75, 25);
             Console.WriteLine("Teste");
+        }
+
+        public static List<Post> GetPosts(BlogDataContext context, int skip = 0, int take = 25)
+        {
+            var posts = context
+                .Posts
+                .AsNoTracking()
+                .Skip(skip)
+                .Take(take)
+                .ToList();
+            return posts;
         }
     }
 }
