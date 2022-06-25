@@ -98,6 +98,7 @@
 <ul>
     <li><a href="#out-performance">Performance</a></li>
     <li><a href="#out-asnotracking">AsNoTracking</a></li>
+    <li><a href="#out-async-await">Async e Await</a></li>
 </ul>
 
 </details>
@@ -973,6 +974,22 @@ Definir o que seria performance.
 <p>Tracking</p>
 <p>Metadados: informações a mais utilizadas pelo <b>EF</b></p>
 <p>AsNoTracking não traz metadados</p>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Async e Await -->
+
+<details id="out-async-await"><summary>Async e Await</summary>
+
+<br/>
+
+<p><b>Task - System.Threading.Tasks</b></p>
+<p>Tarefas. Permite execuções em paralelo.</p>
+<p><b>Async</b> e <b>Await</b> dependem do método como <b>Task</b>. Com isso, outros métodos podem chamar esse método ao mesmo tempo e aguardar sua execução.</p>
+
+<p>Sem <b>await</b> todas as instruções do método são executadas mesmo que algumas não estejam concluídas.</p>
 
 </details>
 
