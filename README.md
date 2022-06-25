@@ -81,6 +81,7 @@
 
 <ul>
     <li><a href="#rel-introducao">Introdução</a></li>
+    <li><a href="#rel-migracao">Criando uma migração</a></li>
 </ul>
 
 </details>
@@ -806,6 +807,29 @@ GO
 dotnet tool install --global dotnet-ef
 dotnet ef
 ```
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Criando uma migração -->
+
+<details id="rel-migracao"><summary>Criando uma migração</summary>
+
+<br/>
+
+```ps
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.17
+```
+
+```ps
+dotnet clean
+dotnet build
+
+dotnet ef migrations add InitialCreation
+```
+
+<p>Será criada a pasta <b>Migrations</b> dentro do projeto</p>
 
 </details>
 
