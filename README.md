@@ -67,6 +67,7 @@
     <li><a href="#map-default">Default Values</a></li>
     <li><a href="#map-relacionamento-1-n">Relacionamento Um para Muitos</a></li>
     <li><a href="#map-relacionamento-n-n">Relacionamento Muitos para Muitos</a></li>
+    <li><a href="#map-criados">Utilizando os Mapeamentos Criados</a></li>
 </ul>
 
 </details>
@@ -726,6 +727,16 @@ select * from [User];
 <!--#region Relacionamento Muitos para Muitos -->
 
 <details id="map-relacionamento-n-n"><summary>Relacionamento Muitos para Muitos</summary>
+
+<br/>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Utilizando os Mapeamentos Criados -->
+
+<details id="map-criados"><summary>Utilizando os Mapeamentos Criados</summary>
 
 <br/>
 
