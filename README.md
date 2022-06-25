@@ -1,5 +1,7 @@
 <h1>Fundamentos do Entity Framework</h1>
 
+Referência: [Carreira Backend .NET (Balta.io)](https://balta.io/)
+
 > As aulas assistidas foram organizadas nos **commits**
 
 <!--#region Sumário -->
