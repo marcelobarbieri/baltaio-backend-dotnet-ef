@@ -84,6 +84,7 @@
     <li><a href="#rel-migracao">Criando uma migração</a></li>
     <li><a href="#rel-banco">Atualizando o banco</a></li>
     <li><a href="#rel-versao">Gerando nova versao do banco</a></li>
+    <li><a href="#rel-script">Gerando script do banco</a></li>
 </ul>
 
 </details>
@@ -873,6 +874,57 @@ dotnet run
 ```
 
 ![Imagem](./FluentBlog/Assets/Captura%20de%20tela%202022-06-25%20112944.png)
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Gerando script do banco -->
+
+<details id="rel-script"><summary>Gerando script do banco</summary>
+
+<br/>
+
+<p>Para deixar de trabalhar com Migrations:</p>
+<ul>
+    <li>Excluir a pasta <b>Migrations</b> do projeto</li>
+    <li>Excluir a tabela <b>__EFMigrationsHistory</b> do banco de dados</li>
+</ul>
+
+```sql
+DROP TABLE [__EFMigrationsHistory]
+```
+
+<p>Geração de script do banco:</p>
+
+```sql
+USE [master]
+GO
+
+ALTER DATABASE [Blog] SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+GO
+
+DROP DATABASE [Blog]
+GO
+```
+
+```ps
+dotnet clean
+dotnet build
+
+dotnet ef migrations add InitialCreation
+dotnet ef migrations script -o ./migration.sql
+```
+
+```sql
+CREATE DATABASE [Blog]
+GO
+
+USE [Blog]
+GO
+
+<migration.sql>
+```
 
 </details>
 
