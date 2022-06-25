@@ -91,6 +91,18 @@
 
 <!--#endregion -->
 
+<!--#region Relacionamentos -->
+
+<details><summary>Performance e Outros</summary>
+
+<ul>
+    <li><a href="#out-performance">Performance</a></li>
+</ul>
+
+</details>
+
+<!--#endregion -->
+
 <!--#endregion -->
 
 <!--#region Introdução -->
@@ -925,6 +937,27 @@ GO
 
 <migration.sql>
 ```
+
+</details>
+
+<!--#endregion -->
+
+<!--#endregion -->
+
+<!--#region Performance e Outros -->
+
+<h2>Performance e Outros</h2>
+
+<!--#region Performance e Outros -->
+
+<details id="out-performance"><summary>Performance</summary>
+
+<br/>
+
+<p>
+Performance é uma feature. Desejável, não obrigatório.<br/>
+Definir o que seria performance.
+</p>
 
 </details>
 
