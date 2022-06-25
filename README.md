@@ -68,6 +68,7 @@
     <li><a href="#map-relacionamento-1-n">Relacionamento Um para Muitos</a></li>
     <li><a href="#map-relacionamento-n-n">Relacionamento Muitos para Muitos</a></li>
     <li><a href="#map-criados">Utilizando os Mapeamentos Criados</a></li>
+    <li><a href="#map-testando">Testando os Relacionamentos</a></li>
 </ul>
 
 </details>
@@ -739,6 +740,28 @@ select * from [User];
 <details id="map-criados"><summary>Utilizando os Mapeamentos Criados</summary>
 
 <br/>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Testando os Relacionamentos -->
+
+<details id="map-testando"><summary>Testando os Relacionamentos</summary>
+
+<br/>
+
+```ps
+dotnet run
+```
+
+```sql
+select * from [User]
+select * from [Category]
+select * from [Post]
+```
+
+![Imagem](./FluentBlog/Assets/Captura%20de%20tela%202022-06-25%20095451.png)
 
 </details>
 

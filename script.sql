@@ -1,3 +1,11 @@
+USE [Master]
+GO
+
+IF DB_ID('Blog') IS NOT NULL
+BEGIN
+    DROP DATABASE [Blog]
+END
+
 CREATE DATABASE [Blog]
 GO
 
