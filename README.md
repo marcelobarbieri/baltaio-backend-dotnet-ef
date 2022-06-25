@@ -99,6 +99,7 @@
     <li><a href="#out-performance">Performance</a></li>
     <li><a href="#out-asnotracking">AsNoTracking</a></li>
     <li><a href="#out-async-await">Async e Await</a></li>
+    <li><a href="#out-loading">Eager Loading VS Lazy Loading</a></li>
 </ul>
 
 </details>
@@ -990,6 +991,18 @@ Definir o que seria performance.
 <p><b>Async</b> e <b>Await</b> dependem do método como <b>Task</b>. Com isso, outros métodos podem chamar esse método ao mesmo tempo e aguardar sua execução.</p>
 
 <p>Sem <b>await</b> todas as instruções do método são executadas mesmo que algumas não estejam concluídas.</p>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Eager Loading VS Lazy Loading -->
+
+<details id="out-loading"><summary>Eager Loading VS Lazy Loading</summary>
+
+<br/>
+
+<p>Lazy Loading: Carregamento preguiçoso</p>
 
 </details>
 
