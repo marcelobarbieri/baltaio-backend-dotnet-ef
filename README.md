@@ -75,6 +75,18 @@
 
 <!--#endregion -->
 
+<!--#region Relacionamentos -->
+
+<details><summary>Relacionamentos</summary>
+
+<ul>
+    <li><a href="#rel-introducao">Introdução</a></li>
+</ul>
+
+</details>
+
+<!--#endregion -->
+
 <!--#endregion -->
 
 <!--#region Introdução -->
@@ -762,6 +774,38 @@ select * from [Post]
 ```
 
 ![Imagem](./FluentBlog/Assets/Captura%20de%20tela%202022-06-25%20095451.png)
+
+</details>
+
+<!--#endregion -->
+
+<!--#endregion -->
+
+<!--#region Relacionamentos -->
+
+<h2>Relacionamentos</h2>
+
+<!--#region Introdução -->
+
+<details id="rel-introducao"><summary>Introdução</summary>
+
+<br/>
+
+```sql
+USE [master]
+GO
+
+ALTER DATABASE [Blog] SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+GO
+
+DROP DATABASE [Blog]
+GO
+```
+
+```ps
+dotnet tool install --global dotnet-ef
+dotnet ef
+```
 
 </details>
 
