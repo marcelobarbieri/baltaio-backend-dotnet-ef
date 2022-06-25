@@ -101,6 +101,7 @@
     <li><a href="#out-async-await">Async e Await</a></li>
     <li><a href="#out-loading">Eager Loading VS Lazy Loading</a></li>
     <li><a href="#out-paginacao">Skip, Take e Paginação</a></li>
+    <li><a href="#out-theninclude">ThenInclude</a></li>
 </ul>
 
 </details>
@@ -1014,6 +1015,19 @@ Definir o que seria performance.
 <details id="out-paginacao"><summary>Skip, Take e Paginação de dados</summary>
 
 <br/>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region ThenInclude -->
+
+<details id="out-theninclude"><summary>ThenInclude</summary>
+
+<br/>
+
+<p>SUBSELECT, evitar. Baixa performance.</p>
+<p>Optar por mapear query manualmente.</p>
 
 </details>
 

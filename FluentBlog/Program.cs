@@ -13,22 +13,21 @@ namespace Blog
         static void Main(string[] args)
         {
             using var context = new BlogDataContext();
-            var posts1 = GetPosts(context, 0, 25);
-            var posts2 = GetPosts(context, 25, 25);
-            var posts3 = GetPosts(context, 50, 25);
-            var posts4 = GetPosts(context, 75, 25);
-            Console.WriteLine("Teste");
-        }
 
-        public static List<Post> GetPosts(BlogDataContext context, int skip = 0, int take = 25)
-        {
             var posts = context
                 .Posts
-                .AsNoTracking()
-                .Skip(skip)
-                .Take(take)
-                .ToList();
-            return posts;
+                .Include(x => x.Author)
+                    .ThenInclude(x => x.Roles) // roles do autor, subselect
+                .Include(x => x.Category);
+            foreach (var post in posts)
+            {
+                foreach (var tag in post.Tags)
+                {
+
+                }
+            }
+
+            Console.WriteLine("Teste");
         }
     }
 }
