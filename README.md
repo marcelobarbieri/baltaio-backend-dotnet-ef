@@ -83,6 +83,7 @@
     <li><a href="#rel-introducao">Introdução</a></li>
     <li><a href="#rel-migracao">Criando uma migração</a></li>
     <li><a href="#rel-banco">Atualizando o banco</a></li>
+    <li><a href="#rel-versao">Gerando nova versao do banco</a></li>
 </ul>
 
 </details>
@@ -853,6 +854,25 @@ SELECT TOP (1000) [MigrationId]
 ```
 
 ![Imagem](./FluentBlog/Assets/Captura%20de%20tela%202022-06-25%20111557.png)
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Gerando nova versão do banco -->
+
+<details id="rel-versao"><summary>Gerando nova versão do banco</summary>
+
+<br/>
+
+```ps
+dotnet ef migrations add AdicionadoCampoGitHub
+dotnet ef database update
+
+dotnet run
+```
+
+![Imagem](./FluentBlog/Assets/Captura%20de%20tela%202022-06-25%20112944.png)
 
 </details>
 
