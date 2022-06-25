@@ -102,6 +102,7 @@
     <li><a href="#out-loading">Eager Loading VS Lazy Loading</a></li>
     <li><a href="#out-paginacao">Skip, Take e Paginação</a></li>
     <li><a href="#out-theninclude">ThenInclude</a></li>
+    <li><a href="#out-queries">Mapeando Queries Puras e View </a></li>
 </ul>
 
 </details>
@@ -1028,6 +1029,16 @@ Definir o que seria performance.
 
 <p>SUBSELECT, evitar. Baixa performance.</p>
 <p>Optar por mapear query manualmente.</p>
+
+</details>
+
+<!--#endregion -->
+
+<!--#region Mapeando Queries Puras e Views -->
+
+<details id="out-queries"><summary>Mapeando Queries Puras e Views</summary>
+
+<br/>
 
 </details>
 

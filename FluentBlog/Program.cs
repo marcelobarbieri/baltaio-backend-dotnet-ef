@@ -14,17 +14,10 @@ namespace Blog
         {
             using var context = new BlogDataContext();
 
-            var posts = context
-                .Posts
-                .Include(x => x.Author)
-                    .ThenInclude(x => x.Roles) // roles do autor, subselect
-                .Include(x => x.Category);
-            foreach (var post in posts)
+            var posts = context.PostWithTagsCount.ToList();
+            foreach (var item in posts)
             {
-                foreach (var tag in post.Tags)
-                {
-
-                }
+                Console.WriteLine($"{item.Name}: {item.Count}");
             }
 
             Console.WriteLine("Teste");
